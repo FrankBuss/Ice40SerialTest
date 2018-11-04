@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RadiantProject version="4.0" title="SerialTest" device="iCE40UP5K-SG48I" performance_grade="High-Performance_1.2V" default_implementation="impl_1">
+    <Options/>
+    <Implementation title="impl_1" dir="impl_1" description="impl_1" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="rs232_sender"/>
+        <Source name="source/rs232_receiver.vhd" type="VHDL" type_short="VHDL">
+            <Options top_module="rs232_receiver"/>
+        </Source>
+        <Source name="source/rs232_sender.vhd" type="VHDL" type_short="VHDL">
+            <Options top_module="rs232_sender"/>
+        </Source>
+        <Source name="source/top.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="source/impl1.ldc" type="LSE Design Constraints File" type_short="LDC">
+            <Options/>
+        </Source>
+        <Source name="source/pins.pdc" type="Physical Constraints File" type_short="PDC">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="SerialTest1.sty"/>
+</RadiantProject>
